@@ -108,6 +108,12 @@ html {
     padding-top: 15px;
 }
 
+.vh-88 { height: 88vh; }
+.vh-89 { height: 89vh; }
+.vh-90 { height: 90vh; }
+.vh-93 { height: 93vh; }
+.vh-94 { height: 94vh; }
+
 @media (min-width: 1200px) { /* Large screen width in UI Kit */
     .ml-40:nth-of-type(4n+2), .ml-r-40:nth-of-type(4n+3), .ml-r-40:nth-of-type(4n+4) { /* Select the 2nd, 3rd and 4th element of the row when showing 4 columns */
       margin-left: 40px;

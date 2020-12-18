@@ -1,6 +1,6 @@
 
-<div class="uk-grid uk-width-1-2@l uk-width-1-1@s uk-margin-small-top uk-flex uk-flex-center">
-    <div>
+<div class="uk-grid uk-width-1-2@l uk-width-1-1@s uk-margin-small-top uk-flex uk-flex-center uk-position-top">
+    <div class="uk-width-large">
         <div class="bg-white uk-flex uk-flex-center p-10 m-5">
             <span class="uk-margin-small-right" uk-icon="icon: chevron-left"></span>
             <span class="uk-margin-small-right">Incident / <strong>All Provinces</strong></span>
@@ -37,7 +37,7 @@
         </div>
 
         <div>
-            <div class="uk-background-secondary uk-padding text-white uk-overflow-auto vh-90">
+            <div class="uk-background-secondary uk-padding text-white uk-overflow-auto vh-88">
                 <?php for ($i=0; $i<3; $i++):?>
                 <div>
                     <span class="uk-text-large">Incident at DKI Jakarta</span><br>

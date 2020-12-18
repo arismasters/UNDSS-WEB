@@ -135,7 +135,7 @@ $(function(){
     $("body").on("click", "path", function(){
         id = $(this).attr("id");
         title = $(this).attr("title");
-        window.location.href = baseUrl+"/incident";
+        window.location.href = baseUrl+"/region";
     });
 
     $("body").on("mouseenter", "path", function(){
@@ -149,6 +149,6 @@ $(function(){
             UIkit.tooltip($(this)).show();
         }
     });
-    
+
     // UIkit.offcanvas("#offcanvas-usage").hide();
 });
