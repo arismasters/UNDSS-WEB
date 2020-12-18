@@ -83,27 +83,6 @@ $(function(){
         }
     }
 
-    $.fn.mata_uang = function() {
-		var angka = this.text();
-        var pecah = angka.split(",");
-		var number_string = pecah[0].replace(/\./g, '').toString();
-
-		var sisa 	= number_string.length % 3;
-		var rupiah 	= number_string.substr(0, sisa);
-		var ribuan 	= number_string.substr(sisa).match(/\d{3}/g);
-        var separator = "";
-
-		if(ribuan){
-			separator = sisa ? '.' : '';
-			rupiah += separator + ribuan.join('.');
-		}
-
-        if (pecah[1]){
-            rupiah = rupiah + ',' + pecah[1];
-        }
-		this.text(rupiah);
-	}
-
     $("body").on("click", ".modal-hapus", function(){
         var action = $(this).attr("data-action");
         var id = $(this).attr("data-id");
@@ -153,9 +132,23 @@ $(function(){
         }
     });
 
-    $(".mata_uang").each(function(){
-        $(this).mata_uang();
+    $("body").on("click", "path", function(){
+        id = $(this).attr("id");
+        title = $(this).attr("title");
+        window.location.href = baseUrl+"/incident";
     });
 
+    $("body").on("mouseenter", "path", function(){
+        id = $(this).attr("id");
+        title = $(this).attr("title");
+        tooltip = $(this).attr("uk-tooltip");
+        if (typeof tooltip !== typeof undefined && tooltip !== false) {
+            UIkit.tooltip($(this)).show();
+        } else {
+            $(this).attr("uk-tooltip", title);
+            UIkit.tooltip($(this)).show();
+        }
+    });
+    
     // UIkit.offcanvas("#offcanvas-usage").hide();
 });
