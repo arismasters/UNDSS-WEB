@@ -113,6 +113,7 @@ html {
 .vh-90 { height: 90vh; }
 .vh-93 { height: 93vh; }
 .vh-94 { height: 94vh; }
+.vh-95-5 { height: 95.5vh; }
 
 @media (min-width: 1200px) { /* Large screen width in UI Kit */
     .ml-40:nth-of-type(4n+2), .ml-r-40:nth-of-type(4n+3), .ml-r-40:nth-of-type(4n+4) { /* Select the 2nd, 3rd and 4th element of the row when showing 4 columns */

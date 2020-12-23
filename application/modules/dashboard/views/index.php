@@ -232,28 +232,34 @@
         <div class="uk-width-large">
             <div class="bg-white p-10 m-5">
                 Incidence by percentage
-                <div class="uk-child-width-1-2@l uk-child-width-1-1@s" uk-grid>
-                    <div>
-                        <div class="bg-map box-color"></div><span>0% to 20%</span>
-                    </div>
-                    <div>
-                        <div class="bg-brown box-color"></div>
-                        <span>61% to 80%</span>
-                    </div>
-                    <div>
-                        <div class="bg-green box-color"></div>
-                        <span>21% to 40%</span>
-                    </div>
-                    
-                    <div>
-                        <div class="bg-red box-color"></div>
-                        <span>81% to 100%</span>
-                    </div>
-                    <div>
-                        <div class="bg-yelow box-color"></div>
-                        <span>41% to 60%</span>
-                    </div>
-                </div>
+                <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s">
+                  <div>
+                     <div class="bg-map box-color"></div><span>0% to 20%</span>
+                  </div>
+                  <div >
+                     <div class="bg-brown box-color"></div>
+                     <span>61% to 80%</span>
+                  </div>
+               </div>
+                  
+               <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top">
+                  <div>
+                     <div class="bg-green box-color"></div>
+                     <span>21% to 40%</span>
+                  </div>
+                  
+                  <div>
+                     <div class="bg-red box-color"></div>
+                     <span>81% to 100%</span>
+                  </div>
+               </div>
+
+               <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top">
+                  <div>
+                     <div class="bg-yelow box-color"></div>
+                     <span>41% to 60%</span>
+                  </div>
+               </div>
             </div>
         </div>
     </div>
