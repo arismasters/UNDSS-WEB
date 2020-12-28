@@ -18,6 +18,14 @@
                 </li>
                 <li>
                     <div class="uk-flex uk-flex-middle">
+                        <a href="<?=base_url();?>threat_category">
+                            <span class="uk-margin-small-right" uk-icon="icon: folder"></span>
+                            <span class="text-user uk-hidden">Threat Category</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-flex uk-flex-middle">
                         <a href="<?=base_url();?>user">
                             <span class="uk-margin-small-right" uk-icon="icon: users"></span>
                             <span class="text-user uk-hidden">Users</span>

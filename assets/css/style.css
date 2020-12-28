@@ -27,8 +27,10 @@ html {
 .bg-red { background-color: #fa5a5a; }
 .bg-prymari { background-color: #1e87f0; }
 .bg-grey { background-color: #ededed; }
+.bg-grey-1 { background-color: #464646; }
 .text-white { color: #fff; }
 .text-yellow { color: #fae65ac4; }
+.text-grey { color: #ddd; }
 
 .bg-img {
     background-repeat: no-repeat;
@@ -108,6 +110,18 @@ html {
     padding-top: 15px;
 }
 
+.left-line {
+    border-left: 1px solid #fff;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+/* .btn-right-bottom {
+    position: fixed;
+    bottom: 15px;
+}  */
+
+.vh-25 { height: 25vh; }
 .vh-88 { height: 88vh; }
 .vh-89 { height: 89vh; }
 .vh-90 { height: 90vh; }
@@ -119,17 +133,32 @@ html {
     .ml-40:nth-of-type(4n+2), .ml-r-40:nth-of-type(4n+3), .ml-r-40:nth-of-type(4n+4) { /* Select the 2nd, 3rd and 4th element of the row when showing 4 columns */
       margin-left: 40px;
     }
+
+    .btn-right-bottom {
+        position: fixed;
+        bottom: 15px;
+    }
 }
   
 @media (min-width: 960px)  and (max-width: 1200px) { /* Medium screen width in UI Kit */
     .ml-40:nth-of-type(3n+2), .ml-r-40:nth-of-type(3n+3) { /* Select the 2nd, 3rd element of the row when showing 3 columns */
       margin-left: 40px;
     }
+
+    .btn-right-bottom {
+        position: fixed;
+        bottom: 50px;
+    }
 }
   
 @media (min-width: 640px)  and (max-width: 960px) { /* Small screen width in UI Kit */
     .ml-40:nth-of-type(2n+2) { /* Select the 2nd element of the row when showing 2 columns */
       margin-left: 0px;
+    }
+
+    .btn-right-bottom {
+        position: fixed;
+        bottom: 50px;
     }
 }
 
