@@ -151,4 +151,6 @@ $(function(){
     });
 
     // UIkit.offcanvas("#offcanvas-usage").hide();
+    // UIkit.toggle("#my-id").hidden();
+    // UIkit.toggle("#form-scenario").hidden();
 });

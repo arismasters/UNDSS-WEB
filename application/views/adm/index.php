@@ -17,7 +17,6 @@
     <script src="<?=base_url();?>assets/plugins/jquery/jquery.min.js"></script>
     <script src="<?=base_url();?>assets/plugins/tinymce/jquery.tinymce.min.js"></script>
     <script src="<?=base_url();?>assets/plugins/tinymce/tinymce.min.js"></script>
-    <script src="<?=base_url();?>assets/js/custom.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -26,9 +25,10 @@
     <div class="uk-container-expand ml-40" uk-height-viewport="offset-bottom: 15">
         <?=$_content;?>
     </div>
-
+    
     <!-- uikit Js -->
     <script src="<?=base_url();?>assets/js/uikit.js"></script>
     <script src="<?=base_url();?>assets/js/uikit-icons.js"></script>
+    <script src="<?=base_url();?>assets/js/custom.js"></script>
 </body>
 </html>

@@ -22,7 +22,7 @@
 
                 <div class="uk-flex" uk-toggle="target: #my-id">
                     <div>
-                        <span class="uk-margin-small-right" uk-icon="icon: folder; ratio: 2.5"></span>
+                        <span class="uk-margin-small-right" uk-icon="icon: folder; ratio: 3.5"></span>
                     </div>
                     <div>
                         <div class="uk-flex">
@@ -40,7 +40,7 @@
                 
                 <div class="uk-flex" uk-toggle="target: #my-id">
                     <div>
-                        <span class="uk-margin-small-right" uk-icon="icon: folder; ratio: 2.5"></span>
+                        <span class="uk-margin-small-right" uk-icon="icon: folder; ratio: 3.5"></span>
                     </div>
                     <div>
                         <div class="uk-flex">
@@ -60,6 +60,7 @@
         </div>
         <!-- end grid -->
         
+        <!-- detail scenario -->
         <div id="my-id" class="uk-width-1-2@l uk-width-1-1@s uk-background-secondary uk-position-right uk-height-viewport text-white">
             <div class="uk-flex">
                 <div class="p-5 uk-height-viewport uk-overflow-auto">
@@ -79,7 +80,7 @@
                         </div>
                         <div class="uk-width-1-2 uk-flex uk-flex-right">
                             <div class="uk-flex uk-flex-middle">
-                                <button type="button">
+                                <button type="button" uk-toggle="target: #form-scenario; animation: uk-animation-slide-right">
                                     <span class="" uk-icon="icon: plus"></span>
                                     <span>New Scan</span>
                                 </button>
@@ -111,7 +112,7 @@
                                         <div class="uk-float-left">
                                             <span>Armed attack against TNI or Police personnel</span>
                                             <div class="uk-flex uk-flex-middle">
-                                                <button type="button">
+                                                <button type="button" uk-toggle="target: #form-scenario">
                                                     <span class="" uk-icon="icon: pencil"></span>
                                                     <span>Edit</span>
                                                 </button>
@@ -162,5 +163,55 @@
                 </div>
             </div> <!-- end flex -->
         </div>
+        <!-- end detail scenario -->
+
+        <!-- form scenario -->
+        <div id="form-scenario" class="uk-width-1-2@l uk-width-1-1@s uk-background-secondary uk-position-right uk-height-viewport text-white">
+            <div class="uk-flex">
+                <div class="p-5 uk-height-viewport uk-overflow-auto">
+                    <div class="uk-flex mt-15" uk-toggle="target: #form-scenario; animation: uk-animation-slide-right">
+                        <div class="uk-margin-small-right">
+                            <span uk-icon="icon: chevron-left"></span>
+                        </div>
+                        <div>
+                            <span class="text-white">Scenario</span>
+                        </div>
+                    </div>
+                        
+                    <div class="uk-margin-small-top uk-margin-small-bottom uk-padding-small">
+                        <div>
+                            <span>Scenario</span>
+                        </div>
+                        <div>
+                            <span>Conflict between Armed separatist groups (OPM) and Indonesian security forces</span>
+                        </div>
+                        <h3 class="text-white">Scenario form</h3>
+                        <form action="#" class="uk-form-stacked">
+                            <div class="uk-margin">
+                                <label class="uk-form-label text-white" for="form-stacked-text">Description</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                </div>
+                            </div>
+                            <div class="uk-flex uk-flex-bottom uk-height-medium@l uk-height-small@s">
+                                <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Submit</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+
+                    
+                </div>
+
+                <div class="left-line">
+                    <div class="uk-height-1-1">
+                        <div>
+                            <span uk-icon="icon: close; ratio: 2.5;" uk-toggle="target: #form-scenario"></span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end flex -->
+        </div>
+        <!-- end form scenario -->
     </div>
 </div>
