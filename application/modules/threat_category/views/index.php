@@ -20,7 +20,8 @@
 
                 <span>What is Incident type as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ini et dolore magna aliqua ini</span>
 
-                <div class="uk-flex" uk-toggle="target: #my-id">
+                <!-- <div class="uk-flex" uk-toggle="target: #scenario; animation: uk-animation-slide-right; cls: uk-invisible"> -->
+                <div class="uk-flex scenario">
                     <div>
                         <span class="uk-margin-small-right" uk-icon="icon: folder; ratio: 3.5"></span>
                     </div>
@@ -38,7 +39,8 @@
                     </div>
                 </div>
                 
-                <div class="uk-flex" uk-toggle="target: #my-id">
+                <!-- <div class="uk-flex" uk-toggle="target: #scenario; animation: uk-animation-slide-right; cls: uk-invisible"> -->
+                <div class="uk-flex scenario">
                     <div>
                         <span class="uk-margin-small-right" uk-icon="icon: folder; ratio: 3.5"></span>
                     </div>
@@ -61,7 +63,7 @@
         <!-- end grid -->
         
         <!-- detail scenario -->
-        <div id="my-id" class="uk-width-1-2@l uk-width-1-1@s uk-background-secondary uk-position-right uk-height-viewport text-white">
+        <div id="scenario" class="uk-width-1-2@l uk-width-1-1@s uk-background-secondary uk-position-right uk-height-viewport text-white">
             <div class="uk-flex">
                 <div class="p-5 uk-height-viewport uk-overflow-auto">
                     <div class="uk-flex mt-15">
@@ -80,7 +82,8 @@
                         </div>
                         <div class="uk-width-1-2 uk-flex uk-flex-right">
                             <div class="uk-flex uk-flex-middle">
-                                <button type="button" uk-toggle="target: #form-scenario; animation: uk-animation-slide-right">
+                                <!-- <button type="button" uk-toggle="target: #form-scenario; animation: uk-animation-slide-right"> -->
+                                <button type="button" class="new-scan">
                                     <span class="" uk-icon="icon: plus"></span>
                                     <span>New Scan</span>
                                 </button>
@@ -157,7 +160,8 @@
                 <div class="left-line">
                     <div class="uk-height-1-1">
                         <div>
-                            <span uk-icon="icon: close; ratio: 2.5;" uk-toggle="target: #my-id"></span>
+                            <span class="close" uk-icon="icon: close"></span>
+                            <!-- <span uk-icon="icon: close; ratio: 2.5;" uk-toggle="target: #scenario"></span> -->
                         </div>
                     </div>
                 </div>
@@ -169,7 +173,7 @@
         <div id="form-scenario" class="uk-width-1-2@l uk-width-1-1@s uk-background-secondary uk-position-right uk-height-viewport text-white">
             <div class="uk-flex">
                 <div class="p-5 uk-height-viewport uk-overflow-auto">
-                    <div class="uk-flex mt-15" uk-toggle="target: #form-scenario; animation: uk-animation-slide-right">
+                    <div class="uk-flex mt-15 close">
                         <div class="uk-margin-small-right">
                             <span uk-icon="icon: chevron-left"></span>
                         </div>
@@ -206,7 +210,8 @@
                 <div class="left-line">
                     <div class="uk-height-1-1">
                         <div>
-                            <span uk-icon="icon: close; ratio: 2.5;" uk-toggle="target: #form-scenario"></span>
+                            <span class="close" uk-icon="icon: close"></span>
+                            <!-- <span uk-icon="icon: close; ratio: 2.5" uk-toggle="target: #form-scenario"></span> -->
                         </div>
                     </div>
                 </div>

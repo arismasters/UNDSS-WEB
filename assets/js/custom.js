@@ -150,7 +150,28 @@ $(function(){
         }
     });
 
+    $("#scenario").hide();
+    $("#form-scenario").hide();
+
+    $("body").on("click", ".scenario", function(){
+        $(".scenario").removeClass("uk-background-secondary");
+        $(this).addClass("uk-background-secondary");
+        $("#scenario").show();
+    });
+    
+    $("body").on("click", ".close", function(){
+        $("#scenario, #form-scenario").hide();
+    });
+    
+    $("body").on("click", ".new-scan", function(){
+        $("#form-scenario").show();
+    });
+
     // UIkit.offcanvas("#offcanvas-usage").hide();
-    // UIkit.toggle("#my-id").hidden();
-    // UIkit.toggle("#form-scenario").hidden();
+    // UIkit.toggle("#my-id").toggle();
+    // UIkit.toggle("#form-scenario").toggle();
+    // UIkit.util.on('.my-id', 'click', function () {
+    //     console.log("form-scenario");
+    //     $("#my-id").removeClass("uk-invisible").addClass("uk-visible");
+    // });
 });
