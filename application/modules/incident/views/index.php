@@ -1,6 +1,7 @@
 <div class="">
     <div class="uk-padding-small uk-inline">
-        <div uk-grid>
+        <!-- <div uk-grid> -->
+        <div class="uk-flex">
             <div class="uk-width-2-3@l uk-width-1-1@s">
                 <div class="uk-flex">
                     <div class="uk-width-1-2">
@@ -37,6 +38,7 @@
                         <span>Description of theft as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
                     </div>
                 </div>
+                <hr>
                 
                 <div class="uk-flex" uk-toggle="target: #my-id">
                     <div>
@@ -55,6 +57,7 @@
                         <span>Description of theft as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
                     </div>
                 </div>
+                <hr>
             </div>
             
         </div>
