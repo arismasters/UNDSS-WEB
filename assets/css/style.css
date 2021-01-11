@@ -116,11 +116,6 @@ html {
     padding: 5px;
 }
 
-/* .btn-right-bottom {
-    position: fixed;
-    bottom: 15px;
-}  */
-
 .vh-25 { height: 25vh; }
 .vh-88 { height: 88vh; }
 .vh-89 { height: 89vh; }
@@ -128,6 +123,8 @@ html {
 .vh-93 { height: 93vh; }
 .vh-94 { height: 94vh; }
 .vh-95-5 { height: 95.5vh; }
+
+.border-bottom { border-bottom: 1px solid #ddd; }
 
 @media (min-width: 1200px) { /* Large screen width in UI Kit */
     .ml-40:nth-of-type(4n+2), .ml-r-40:nth-of-type(4n+3), .ml-r-40:nth-of-type(4n+4) { /* Select the 2nd, 3rd and 4th element of the row when showing 4 columns */

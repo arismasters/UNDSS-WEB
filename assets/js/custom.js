@@ -150,22 +150,29 @@ $(function(){
         }
     });
 
-    $("#scenario").hide();
-    $("#form-scenario").hide();
-
-    $("body").on("click", ".scenario", function(){
-        $(".scenario").removeClass("uk-background-secondary");
+    $("body").on("click", ".click-add-bg", function(){
+        $(".click-add-bg").removeClass("uk-background-secondary");
         $(this).addClass("uk-background-secondary");
-        $("#scenario").show();
     });
+
+    // $("#scenario").hide();
+    // $("#form-scenario").hide();
+
+    // $("body").on("click", ".scenario", function(){
+    //     $(".scenario").removeClass("uk-background-secondary");
+    //     $(this).addClass("uk-background-secondary");
+    //     $("#scenario").show();
+    // });
     
-    $("body").on("click", ".close", function(){
-        $("#scenario, #form-scenario").hide();
-    });
+    // $("body").on("click", ".close", function(){
+    //     $("#scenario, #form-scenario").hide();
+    // });
     
-    $("body").on("click", ".new-scan", function(){
-        $("#form-scenario").show();
-    });
+    // $("body").on("click", ".new-scan", function(){
+    //     $("#form-scenario").show();
+    // });
+
+    UIkit.toggle(".click-add-bg", {target:"#incident"});
 
     // UIkit.offcanvas("#offcanvas-usage").hide();
     // UIkit.toggle("#my-id").toggle();
