@@ -1,3 +1,8 @@
+<!-- side menu icon -->
+<div class="uk-position-small uk-position-top-left uk-position-fixed" uk-toggle="target: #side-menu" style="z-index: 1;">
+    <span class="uk-margin-small-right" uk-icon="icon: menu"></span>
+</div>
+<!-- end side menu icon -->
 <!-- <div class="uk-padding-small uk-inline"> -->
 <div class="uk-margin-small-top uk-margin-small-left">
     <!-- <div uk-grid> -->
@@ -9,7 +14,7 @@
                 </div>
                 
                 <div class="uk-width-1-2">
-                    <div class="uk-flex uk-flex-right p-10">
+                    <div class="uk-flex uk-flex-right p-10 mr-10">
                         <div class="uk-background-secondary text-white p-5">
                             <span class="uk-margin-small-right" uk-icon="icon: plus"></span>
                             <span class="uk-margin-small-right" uk-icon="icon: list"></span>
@@ -18,12 +23,12 @@
                     </div>
                 </div>            
             </div>
-            <div class="uk-padding-small">
+            <div class="uk-padding-small mr-10">
                 <span>What is Incident type as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ini et dolore magna aliqua ini</span>
             </div>
 
             <!-- <div class="uk-flex" uk-toggle="target: #scenario; animation: uk-animation-slide-right; cls: uk-invisible"> -->
-            <div class="uk-flex uk-padding-small border-bottom click-add-bg" uk-toggle="target: #scenario; animation: uk-animation-slide-right; cls: uk-invisible">
+            <div class="uk-flex uk-padding-small border-bottom click-add-bg" uk-toggle="target: #scenario; animation: uk-animation-slide-right">
                 <div>
                     <span class="uk-margin-small-right" uk-icon="icon: folder; ratio: 3.5"></span>
                 </div>
@@ -36,13 +41,15 @@
                             <span>2 min ago</span>
                         </div>
                     </div>
-                    <span>Description of theft as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
-                    <span>Description of theft as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                    <div class="mr-15">
+                        <span>Description of theft as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                        <span>Description of theft as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                    </div>
                 </div>
             </div>
             
             <!-- <div class="uk-flex" uk-toggle="target: #scenario; animation: uk-animation-slide-right; cls: uk-invisible"> -->
-            <div class="uk-flex uk-padding-small border-bottom click-add-bg" uk-toggle="target: #scenario; animation: uk-animation-slide-right; cls: uk-invisible">
+            <div class="uk-flex uk-padding-small border-bottom click-add-bg" uk-toggle="target: #scenario; animation: uk-animation-slide-right">
                 <div>
                     <span class="uk-margin-small-right" uk-icon="icon: folder; ratio: 3.5"></span>
                 </div>
@@ -55,8 +62,11 @@
                             <span>2 year ago</span>
                         </div>
                     </div>
-                    <span>Description of theft as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
-                    <span>Description of theft as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+
+                    <div class="mr-15">
+                        <span>Description of theft as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                        <span>Description of theft as Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,7 +77,7 @@
     <!-- detail scenario -->
     <div id="scenario" class="uk-width-1-2@l uk-width-1-1@s uk-background-secondary uk-position-right uk-height-viewport text-white">
         <div class="uk-flex">
-            <div class="p-5 uk-height-viewport uk-overflow-auto">
+            <div class="p-5 uk-height-viewport uk-overflow-auto web-fill">
                 <div class="uk-flex mt-15">
                     <div class="uk-width-1-2">
                         <span class="text-white">Armed Conflict</span>
@@ -85,7 +95,7 @@
                     <div class="uk-width-1-2 uk-flex uk-flex-right">
                         <div class="uk-flex uk-flex-middle">
                             <!-- <button type="button" uk-toggle="target: #form-scenario; animation: uk-animation-slide-right"> -->
-                            <button type="button" class="new-scan">
+                            <button type="button" class="new-scan" uk-toggle="target: #form-scenario">
                                 <span class="" uk-icon="icon: plus"></span>
                                 <span>New Scan</span>
                             </button>
@@ -163,7 +173,7 @@
                 <div class="uk-height-1-1">
                     <div>
                         <!-- <span class="close" uk-icon="icon: close"></span> -->
-                        <span uk-icon="icon: close; ratio: 2.5;" uk-toggle="target: #scenario"></span>
+                        <span uk-icon="icon: close" uk-toggle="target: #scenario"></span>
                     </div>
                 </div>
             </div>
@@ -174,8 +184,8 @@
     <!-- form scenario -->
     <div id="form-scenario" class="uk-width-1-2@l uk-width-1-1@s uk-background-secondary uk-position-right uk-height-viewport text-white">
         <div class="uk-flex">
-            <div class="p-5 uk-height-viewport uk-overflow-auto">
-                <div class="uk-flex mt-15 close">
+            <div class="p-5 uk-height-viewport uk-overflow-auto web-fill">
+                <div class="uk-flex mt-15"  uk-toggle="target: #form-scenario">
                     <div class="uk-margin-small-right">
                         <span uk-icon="icon: chevron-left"></span>
                     </div>
@@ -213,7 +223,7 @@
                 <div class="uk-height-1-1">
                     <div>
                         <!-- <span class="close" uk-icon="icon: close"></span> -->
-                        <span uk-icon="icon: close; ratio: 2.5" uk-toggle="target: #form-scenario"></span>
+                        <span uk-icon="icon: trash" uk-toggle="target: #form-scenario"></span>
                     </div>
                 </div>
             </div>

@@ -172,7 +172,7 @@ $(function(){
     //     $("#form-scenario").show();
     // });
 
-    UIkit.toggle(".click-add-bg", {target:"#incident"});
+    // UIkit.toggle(".click-add-bg", {target:"#incident"});
 
     // UIkit.offcanvas("#offcanvas-usage").hide();
     // UIkit.toggle("#my-id").toggle();

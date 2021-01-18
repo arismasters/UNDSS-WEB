@@ -1,26 +1,27 @@
-<!-- side menu icon -->
-<div class="uk-position-small uk-position-top-left uk-position-fixed" uk-toggle="target: #side-menu" style="z-index: 1;">
+
+<!-- <div>
     <span class="uk-margin-small-right" uk-icon="icon: menu"></span>
+</div> -->
+<!-- <div class="uk-grid uk-width-1-2@l uk-width-1-1@s uk-margin-small-top uk-margin-medium-left uk-flex uk-position-top uk-padding-remove-left"> -->
+<div class="uk-flex uk-flex-center uk-width-1-2@l uk-width-1-1@s uk-margin-small-top uk-position-top">
+    <div class="uk-width-large bg-white">
+        <div class="p-10">
+            <span class="uk-margin-small-right" uk-icon="icon: chevron-left"></span>
+            <span class="uk-margin-small-right" uk-icon="icon: chevron-right"></span>
+            <span class="uk-margin-small-right">Incident / <strong>All Provinces</strong></span>
+            <span class="uk-margin-small-right" uk-icon="icon: list"></span>
+            <span class="uk-margin-small-right" uk-icon="icon: print"></span>
+            <span class="uk-margin-small-right" uk-icon="icon: search"></span>
+        </div>
+    </div>
 </div>
-<!-- end side menu icon -->
+
 <div class="bg-grey uk-height-viewport uk-flex uk-flex-center">
+    <!-- <div class="uk-child-width-1-2@l uk-child-width-1-1@s uk-width-expand uk-margin-remove-left" uk-grid> -->
     <div class="uk-width-expand uk-margin-remove-left" uk-grid>
         <div class="uk-width-2-3@l uk-width-1-1@s uk-padding-remove-left">
-            <div class="uk-flex uk-flex-center uk-width-1-2@l uk-width-1-1@s uk-margin-small-top uk-position-top">
-                <div class="uk-width-large bg-white">
-                    <div class="p-10">
-                        <span class="uk-margin-small-right" uk-icon="icon: chevron-left"></span>
-                        <span class="uk-margin-small-right" uk-icon="icon: chevron-right"></span>
-                        <span class="uk-margin-small-right">Incident / <strong>All Provinces</strong></span>
-                        <span class="uk-margin-small-right" uk-icon="icon: list"></span>
-                        <span class="uk-margin-small-right" uk-icon="icon: print"></span>
-                        <span class="uk-margin-small-right" uk-icon="icon: search"></span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- peta -->
             <div class="uk-flex uk-flex-center uk-flex-middle uk-height-viewport">
+                <!-- peta -->
                 <svg
                 xmlns:mapsvg="http://mapsvg.com"
                 xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -37,47 +38,10 @@
                     title="Aceh"
                     id="ID-AC" />
                 </svg>
-            </div>
-            <!-- end peta -->
-
-            <div class="uk-flex uk-flex-center uk-position-bottom uk-width-1-2@l uk-width-1-1@s">
-                <div class="uk-width-large">
-                    <div class="bg-white p-10">
-                        Incidence by percentage
-                        <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s">
-                            <div>
-                                <div class="bg-map box-color"></div><span>0% to 20%</span>
-                            </div>
-                            <div >
-                                <div class="bg-brown box-color"></div>
-                                <span>61% to 80%</span>
-                            </div>
-                        </div>
-                        
-                        <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top">
-                            <div>
-                                <div class="bg-green box-color"></div>
-                                <span>21% to 40%</span>
-                            </div>
-                            
-                            <div>
-                                <div class="bg-red box-color"></div>
-                                <span>81% to 100%</span>
-                            </div>
-                        </div>
-
-                        <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top">
-                            <div>
-                                <div class="bg-yelow box-color"></div>
-                                <span>41% to 60%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- end peta -->
             </div>
         </div>
 
-        <!-- sisi kanan -->
         <div class="uk-width-1-3@l uk-width-1-1@s uk-padding-remove-left">
             <div class="uk-background-secondary uk-padding-small text-white uk-overflow-auto vh-95-5">
                 <?php for ($i=0; $i<3; $i++):?>
@@ -115,6 +79,43 @@
                 <?php endfor; ?>
             </div>
         </div>
-        <!-- end sisi kanan -->
+
+    </div>
+</div>
+
+<!-- <div class="uk-flex uk-flex-center uk-flex-middle uk-position-bottom uk-width-1-2@l uk-width-1-1@s  uk-padding-remove-left"> -->
+<div class="uk-flex uk-flex-center uk-position-bottom uk-width-1-2@l uk-width-1-1@s">
+    <div class="uk-width-large">
+        <div class="bg-white p-10">
+            Incidence by percentage
+            <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s">
+                <div>
+                    <div class="bg-map box-color"></div><span>0% to 20%</span>
+                </div>
+                <div >
+                    <div class="bg-brown box-color"></div>
+                    <span>61% to 80%</span>
+                </div>
+            </div>
+            
+            <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top">
+                <div>
+                    <div class="bg-green box-color"></div>
+                    <span>21% to 40%</span>
+                </div>
+                
+                <div>
+                    <div class="bg-red box-color"></div>
+                    <span>81% to 100%</span>
+                </div>
+            </div>
+
+            <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top">
+                <div>
+                    <div class="bg-yelow box-color"></div>
+                    <span>41% to 60%</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

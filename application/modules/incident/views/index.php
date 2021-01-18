@@ -1,3 +1,9 @@
+<!-- side menu icon -->
+<div class="uk-position-small uk-position-top-left uk-position-fixed" uk-toggle="target: #side-menu" style="z-index: 1;">
+    <span class="uk-margin-small-right" uk-icon="icon: menu"></span>
+</div>
+<!-- end side menu icon -->
+
 <div class="uk-margin-small-top uk-margin-small-left">
     <!-- <div uk-flex> -->
     <div class="uk-flex">
@@ -23,7 +29,7 @@
             </div>
 
             <!-- <div class="uk-flex uk-padding-small border-bottom click-add-bg" uk-toggle="target: #incident; cls: uk-hidden"> -->
-            <div class="uk-flex uk-padding-small border-bottom click-add-bg">
+            <div class="uk-flex uk-padding-small border-bottom click-add-bg" uk-toggle="target: #incident">
                 <div>
                     <span class="uk-margin-small-right" uk-icon="icon: folder; ratio: 2.5"></span>
                 </div>
@@ -42,7 +48,7 @@
             </div>
 
             <!-- <div class="uk-flex uk-padding-small border-bottom click-add-bg" uk-toggle="target: #incident; cls: uk-hidden"> -->
-            <div class="uk-flex uk-padding-small border-bottom click-add-bg">
+            <div class="uk-flex uk-padding-small border-bottom click-add-bg" uk-toggle="target: #incident">
                 <div>
                     <span class="uk-margin-small-right" uk-icon="icon: folder; ratio: 2.5"></span>
                 </div>
