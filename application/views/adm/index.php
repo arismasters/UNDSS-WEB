@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -20,12 +19,14 @@
 </head>
 <body>
     <!-- header -->
-    <?=(is_null($this->template->with_side_menu)) ? '':$_header;?>
+    <?=$_header;?>
     <!-- end header -->
+    <!-- side menu -->
+    <?=(is_null($this->template->with_side_menu)) ? '':$_side_menu;?>
+    <!-- end side menu -->
     <div class="uk-container-expand ml-40" uk-height-viewport="offset-bottom: 15">
         <?=$_content;?>
-    </div>
-    
+    </div>    
     <!-- uikit Js -->
     <script src="<?=base_url();?>assets/js/uikit.js"></script>
     <script src="<?=base_url();?>assets/js/uikit-icons.js"></script>

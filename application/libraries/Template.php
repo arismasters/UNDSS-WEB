@@ -31,6 +31,7 @@ class Template {
       //   $this->site_logo = base_url().$site->data[0]->icon_url.'/'.$site->data[0]->icon;
       // }
       $data['_header']=$this->_ci->load->view('adm/header', $data, true);
+      $data['_side_menu']=$this->_ci->load->view('adm/side_menu', $data, true);
       $data['_content'] = $this->_ci->load->view($view_page, $data, true);
       $this->_ci->load->view('adm/index', $data);
     }

@@ -1,27 +1,16 @@
-<div class="uk-grid uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top uk-flex uk-flex-center uk-position-top" uk-grid>
-    <div>
-        <div class="uk-width-large">
-            <div class="bg-white uk-flex uk-flex-center p-10 m-5">
-                <span class="uk-margin-small-right" uk-icon="icon: chevron-left"></span>
-                <span class="uk-margin-small-right">Incident / <strong>All Provinces</strong></span>
-                <span class="uk-margin-small-right" uk-icon="icon: list"></span>
-                <span class="uk-margin-small-right" uk-icon="icon: print"></span>
-                <span class="uk-margin-small-right" uk-icon="icon: search"></span>
-            </div>
-        </div>
-    </div>
-
-    <div>
-        <div class="uk-flex uk-flex-right">
-            <button class="uk-button uk-button-primary uk-button-small" uk-toggle="target: #modal-awal">
-                <span class="uk-margin-small-right" uk-icon="icon: plus"></span>
-                New Incident
-            </button>
-            <button class="uk-button bg-white uk-button-small">
-                <span class="uk-margin-small-right" uk-icon="icon: cog"></span>
-            </button>
-        </div>
-    </div>
+<!-- <div class="uk-grid uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top uk-flex uk-flex-center uk-position-top" uk-grid> -->
+<div class="uk-grid uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top uk-flex uk-flex-center" uk-grid>
+   <div>
+      <div class="uk-width-large">
+         <div class="bg-white uk-flex uk-flex-center p-10 m-5">
+               <span class="uk-margin-small-right" uk-icon="icon: chevron-left"></span>
+               <span class="uk-margin-small-right">Incident / <strong>All Provinces</strong></span>
+               <span class="uk-margin-small-right" uk-icon="icon: list"></span>
+               <span class="uk-margin-small-right" uk-icon="icon: print"></span>
+               <span class="uk-margin-small-right" uk-icon="icon: search"></span>
+         </div>
+      </div>
+   </div>
 </div>
 
 <!-- peta -->

@@ -28,6 +28,7 @@ html {
 .bg-prymari { background-color: #1e87f0; }
 .bg-grey { background-color: #ededed; }
 .bg-grey-1 { background-color: #464646; }
+.bg-dark { background-color: #000 !important; }
 .text-white { color: #fff; }
 .text-yellow { color: #fae65ac4; }
 .text-grey { color: #ddd; }
@@ -115,6 +116,27 @@ html {
     margin-left: 5px;
     padding: 5px;
 }
+
+.later-cap {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    margin-left: 5px;
+    text-align: center;
+    display: table;
+}
+
+.later-cap > .child-later-cap {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.uk-navbar-container {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+.text-color-white { color: #fff; }
 
 .vh-25 { height: 25vh; }
 .vh-88 { height: 88vh; }
