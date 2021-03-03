@@ -131,9 +131,12 @@ html {
     vertical-align: middle;
 }
 
-.uk-navbar-container {
-    background-color: #000 !important;
-    color: #fff;
+.uk-navbar {
+    height: 55px;
+}
+
+.uk-navbar-left, .uk-navbar-right, .uk-navbar-center:only-child {
+    flex-wrap: nowrap;
 }
 
 .text-color-white { color: #fff; }

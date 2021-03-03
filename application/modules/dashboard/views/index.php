@@ -1,21 +1,23 @@
-<!-- <div class="uk-grid uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top uk-flex uk-flex-center uk-position-top" uk-grid> -->
-<div class="uk-grid uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top uk-flex uk-flex-center" uk-grid>
+<div class="uk-position-top uk-width-1-4" style="margin: 65px 35px 0px 35px;">
+   <!-- <div>
+      <div class="uk-background-secondary p-5">
+         <span class="uk-margin-small-right" uk-icon="icon: menu"></span>
+      </div>
+   </div> -->
    <div>
-      <div class="uk-width-large">
-         <div class="bg-white uk-flex uk-flex-center p-10 m-5">
-               <span class="uk-margin-small-right" uk-icon="icon: chevron-left"></span>
-               <span class="uk-margin-small-right">Incident / <strong>All Provinces</strong></span>
-               <span class="uk-margin-small-right" uk-icon="icon: list"></span>
-               <span class="uk-margin-small-right" uk-icon="icon: print"></span>
-               <span class="uk-margin-small-right" uk-icon="icon: search"></span>
-         </div>
+      <div class="bg-white uk-border-rounded mb-10 p-5">
+         <span class="uk-margin-small-right">Incident / <strong>All Provinces</strong></span>
+      </div>
+      <div class="bg-white uk-border-rounded p-5" style="width: fit-content;">
+         <span class="uk-margin-small-right" uk-icon="icon: list"></span>
+         <span class="uk-margin-small-right" uk-icon="icon: print">| </span>
+         <span class="uk-margin-small-right" uk-icon="icon: search">| </span>
       </div>
    </div>
 </div>
 
 <!-- peta -->
-<div class="bg-map uk-width-expand uk-height-viewport uk-flex uk-flex-center uk-flex-middle">
-<!-- <img src="<?=base_url('assets/upload/images/indonesia.svg')?>" uk-svg> -->
+<div class="bg-map uk-width-expand uk-flex uk-flex-center uk-flex-middle" uk-height-viewport="offset-bottom: 5">
 <svg
    xmlns:mapsvg="http://mapsvg.com"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -216,258 +218,46 @@
 </div>
 <!-- end peta -->
 
-<div class="uk-position-bottom uk-child-width-1-2@l uk-child-width-1-1@s" uk-grid>
-    <div>
-        <div class="uk-width-large">
-            <div class="bg-white p-10 m-5">
-                Incidence by percentage
-                <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s">
-                  <div>
-                     <div class="bg-map box-color"></div><span>0% to 20%</span>
-                  </div>
-                  <div >
-                     <div class="bg-brown box-color"></div>
-                     <span>61% to 80%</span>
-                  </div>
-               </div>
-                  
-               <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top">
-                  <div>
-                     <div class="bg-green box-color"></div>
-                     <span>21% to 40%</span>
-                  </div>
-                  
-                  <div>
-                     <div class="bg-red box-color"></div>
-                     <span>81% to 100%</span>
-                  </div>
-               </div>
+<div class="uk-flex uk-position-bottom uk-width-1-3@l uk-width-1-1@s" style="margin-left: 35px;">
+   <div class="bg-white uk-width-expand p-10 m-5">
+       Incidence by percentage
+       <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s">
+         <div>
+            <div class="bg-map box-color"></div><span>0% to 20%</span>
+         </div>
+         <div >
+            <div class="bg-brown box-color"></div>
+            <span>61% to 80%</span>
+         </div>
+      </div>
+         
+      <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top">
+         <div>
+            <div class="bg-green box-color"></div>
+            <span>21% to 40%</span>
+         </div>
+         
+         <div>
+            <div class="bg-red box-color"></div>
+            <span>81% to 100%</span>
+         </div>
+      </div>
 
-               <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top">
-                  <div>
-                     <div class="bg-yelow box-color"></div>
-                     <span>41% to 60%</span>
-                  </div>
-               </div>
-            </div>
-        </div>
-    </div>
+      <div class="uk-flex uk-child-width-1-2@l uk-child-width-1-1@s uk-margin-small-top">
+         <div>
+            <div class="bg-yelow box-color"></div>
+            <span>41% to 60%</span>
+         </div>
+      </div>
+   </div>
+   <!-- <div class="uk-width-large">
+   </div> -->
+    <!-- <div>
+    </div> -->
 
-    <div>
+    <!-- <div>
         <div class="uk-flex uk-flex-right uk-position-bottom">
             powered by ID Solution
         </div>
-    </div>
+    </div> -->
 </div>
-
-<!-- modal -->
-<div id="modal-awal" class="uk-flex-top" uk-modal>
-   <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-background-secondary">
-      <button class="uk-modal-close-default" type="button" uk-close></button>
-      <h2 class="uk-modal-title uk-text-center color-white">New Incident</h2>
-      <div class="uk-text-center">
-         <span class="uk-text-primary">Import</span>
-         <hr class="uk-divider-small">
-         <span class="uk-text-primary" uk-toggle="target: #modal-form">Manual Input</span>
-      </div>
-   </div>
-</div>
-<!-- end modal -->
-
-<!-- modal form -->
-<div id="modal-form" class="uk-flex-top uk-margin-remove uk-padding-remove" uk-modal>
-   <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-background-secondary uk-height-viewport uk-width-expand">
-      <button class="uk-modal-close-default" type="button" uk-close></button>
-      <h2 class="uk-modal-title color-white">New Incident</h2>
-      <div>
-         <form action="">
-            <div uk-grid>
-               <div class="uk-width-1-5@l uk-width-1-1@s">
-                  <label class="uk-form-label color-white">Description</label><br>
-                  <div class="uk-inline uk-width-expand">
-                     <input class="uk-input uk-form-small" type="text" placeholder="">
-                  </div>
-               </div>
-               
-               <div class="uk-width-4-5@l uk-width-1-1@s">
-                  <div uk-grid>
-                     <div class="uk-width-1-6@l uk-width-1-1@s">
-                        <label class="uk-form-label color-white">Date</label><br>
-                        <div class="uk-inline uk-width-expand">
-                           <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
-                           <input class="uk-input uk-form-small" type="text">
-                        </div>
-                     </div>
-         
-                     <div class="uk-width-1-6@l uk-width-1-1@s">
-                        <label class="uk-form-label color-white">Time</label><br>
-                        <div class="uk-inline uk-width-expand">
-                           <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: clock"></span>
-                           <input class="uk-input uk-form-small" type="text">
-                        </div>
-                     </div>
-                     
-                     <div class="uk-width-1-6@l uk-width-1-1@s">
-                        <label class="uk-form-label color-white">Region</label><br>
-                        <div class="uk-inline uk-width-expand">
-                           <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: chevron-down"></span>
-                           <select class="uk-input uk-form-small">
-                              <option value="">Please select...</option>
-                              <option value="1">Option 01</option>
-                              <option value="2">Option 02</option>
-                              <option value="3">Option 03</option>
-                              <option value="4">Option 04</option>
-                           </select>
-                        </div>
-                     </div>
-                     
-                     <div class="uk-width-1-6@l uk-width-1-1@s">
-                        <label class="uk-form-label color-white">SLS Area</label><br>
-                        <div class="uk-inline uk-width-expand">
-                           <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: chevron-down"></span>
-                           <select class="uk-input uk-form-small">
-                              <option value="">Please select...</option>
-                              <option value="1">Option 01</option>
-                              <option value="2">Option 02</option>
-                              <option value="3">Option 03</option>
-                              <option value="4">Option 04</option>
-                           </select>
-                        </div>
-                     </div>
-                     
-                     <div class="uk-width-1-6@l uk-width-1-1@s">
-                        <label class="uk-form-label color-white">Province</label><br>
-                        <div class="uk-inline uk-width-expand">
-                           <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: chevron-down"></span>
-                           <select class="uk-input uk-form-small">
-                              <option value="">Please select...</option>
-                              <option value="1">Option 01</option>
-                              <option value="2">Option 02</option>
-                              <option value="3">Option 03</option>
-                              <option value="4">Option 04</option>
-                           </select>
-                        </div>
-                     </div>
-                     
-                     <div class="uk-width-1-6@l uk-width-1-1@s">
-                        <label class="uk-form-label color-white">Kecamatan</label><br>
-                        <div class="uk-inline uk-width-expand">
-                           <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: chevron-down"></span>
-                           <select class="uk-input uk-form-small">
-                              <option value="">Please select...</option>
-                              <option value="1">Option 01</option>
-                              <option value="2">Option 02</option>
-                              <option value="3">Option 03</option>
-                              <option value="4">Option 04</option>
-                           </select>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div> <!-- end grid -->
-
-            <div uk-grid>
-               <div class="uk-width-1-5@l uk-width-1-1@s">
-                  <label class="uk-form-label color-white">Specific Area</label><br>
-                  <div class="uk-inline uk-width-expand">
-                     <input class="uk-input uk-form-small" type="text" placeholder="">
-                  </div>
-               </div>
-
-               <div class="uk-width-4-5@l uk-width-1-1@s">
-                  <div uk-grid>
-                     <div class="uk-width-1-2@l uk-width-1-1@s">
-                        <label class="uk-form-label color-white">Incident Type</label><br>
-                        <div class="uk-inline uk-width-expand">
-                           <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: chevron-down"></span>
-                           <select class="uk-input uk-form-small">
-                              <option value="">Please select...</option>
-                              <option value="1">Option 01</option>
-                              <option value="2">Option 02</option>
-                              <option value="3">Option 03</option>
-                              <option value="4">Option 04</option>
-                           </select>
-                        </div>
-                     </div>
-
-                     <div class="uk-width-1-6@l uk-width-1-1@s">
-                        <label class="uk-form-label color-white">Casualities</label><br>
-                        <div class="uk-inline uk-width-expand">
-                           <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: chevron-down"></span>
-                           <select class="uk-input uk-form-small">
-                              <option value="">Please select...</option>
-                              <option value="1">Option 01</option>
-                              <option value="2">Option 02</option>
-                              <option value="3">Option 03</option>
-                              <option value="4">Option 04</option>
-                           </select>
-                        </div>
-                     </div>
-
-                     <div class="uk-width-1-6@l uk-width-1-1@s uk-flex uk-flex-bottom">
-                        <label class="text-white"><input class="uk-checkbox" type="checkbox" checked> Is Women Issue</label>
-                     </div>
-                     
-                     <div class="uk-width-1-6@l uk-width-1-1@s uk-flex uk-flex-bottom">
-                        <label class="text-white"><input class="uk-checkbox" type="checkbox" checked> Is UN Issue</label>
-                     </div>
-                     
-                  </div>
-               </div>
-            </div> <!-- end grid -->
-            
-            
-            <div uk-grid>
-               <div class="uk-width-1-5@l uk-width-1-1@s">
-                  <label class="uk-form-label color-white">Source of Information</label><br>
-                  <div class="uk-inline uk-width-expand">
-                     <input class="uk-input uk-form-small" type="text" placeholder="">
-                  </div>
-               </div>
-
-               <div class="uk-width-4-5@l uk-width-1-1@s">
-                  <div class="uk-grid-samll uk-child-width-1-6" uk-grid>
-                     <div class="uk-width-1-6@l uk-width-1-1@s">
-                        <label class="uk-form-label color-white">Terorist</label><br>
-                        <div class="uk-inline uk-width-expand">
-                           <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: chevron-down"></span>
-                           <select class="uk-input uk-form-small">
-                              <option value="">Please select...</option>
-                              <option value="1">Option 01</option>
-                              <option value="2">Option 02</option>
-                              <option value="3">Option 03</option>
-                              <option value="4">Option 04</option>
-                           </select>
-                        </div>
-                     </div>
-
-                     <div class="uk-width-1-2@l uk-width-1-1@s">
-                        <label class="uk-form-label color-white">Comment</label><br>
-                        <div class="uk-inline uk-width-expand">
-                           <input class="uk-input uk-form-small" type="text" placeholder="">
-                        </div>
-                     </div>
-
-                     <div class="uk-width-1-3@l uk-width-1-1@s uk-flex uk-flex-right uk-flex-bottom">
-                        <span class="text-white" uk-icon="icon: trash"></span>
-                     </div>
-                  </div>
-               </div>
-            </div> <!-- end grid -->
-            <hr class="">
-            <div class="uk-width-expand uk-flex uk-flex-right@l uk-flex-center@s uk-margin-small-top">
-               <div>
-                  <button class="uk-button bg-white" uk-toggle="target: #modal-awal uk-margin-small-right">
-                        <span class="uk-margin-small-right" uk-icon="icon: plus"></span>
-                        Add more
-                  </button>
-                  <button class="uk-button bg-prymari text-white">
-                        Submit
-                  </button>
-               </div>
-            </div>
-         </form>
-      </div>
-   </div>
-</div>
-<!-- end modal form -->

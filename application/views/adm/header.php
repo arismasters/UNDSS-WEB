@@ -1,6 +1,6 @@
-<nav class="uk-navbar-container uk-background-secondary" uk-navbar>
+<nav class="uk-background-secondary" uk-navbar>
     <div class="uk-navbar-left">
-        <a class="uk-navbar-item uk-logo" href="#">
+        <a class="uk-navbar-item" href="#">
             <img src="<?=base_url();?>assets/upload/images/undss-logo.png" alt="">
             <span class="text-color-white">UNDSS</span>
         </a>

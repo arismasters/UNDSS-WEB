@@ -6,7 +6,7 @@ class Dashboard extends CI_Controller {
     {
         parent::__construct();
         // $this->load->model(array('user/users_model'));
-        // $this->template->with_side_menu = 1;
+        $this->template->with_side_menu = 1;
     }
 
     public function index()

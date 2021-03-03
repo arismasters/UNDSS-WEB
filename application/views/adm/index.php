@@ -24,7 +24,8 @@
     <!-- side menu -->
     <?=(is_null($this->template->with_side_menu)) ? '':$_side_menu;?>
     <!-- end side menu -->
-    <div class="uk-container-expand ml-40" uk-height-viewport="offset-bottom: 15">
+    <!-- <div class="uk-container-expand" uk-height-viewport="offset-bottom: 50"> -->
+    <div class="uk-container-expand">
         <?=$_content;?>
     </div>    
     <!-- uikit Js -->
