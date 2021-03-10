@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
- 
+
 class Dashboard extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
         // $this->load->model(array('user/users_model'));
-        $this->template->with_side_menu = 1;
+        $this->template->with_side_menu = 0;
     }
 
     public function index()

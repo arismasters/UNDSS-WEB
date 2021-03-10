@@ -1,28 +1,28 @@
-@font-face {
+/* @font-face {
     font-family: 'Nunito';
     src: url('/assets/font/Nunito/nunito-light.woff') format('woff'),
          url('/assets/font/Nunito/nunito-light.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-}
-html {
+} */
+/* html { */
     /* 1 */
-    font-family: Nunito;
     /* font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+    /* font-family: Nunito;
     font-size: 16px;
     font-weight: normal;
-    line-height: 1.5;
+    line-height: 1.5; */
     /* 2 */
-    -webkit-text-size-adjust: 100%;
+    /* -webkit-text-size-adjust: 100%; */
     /* 3 */
-    background: #fff;
+    /* background: #fff;
     color: #666;
-}
+} */
 
 .bg-map { background-color: #0f6ecd5c; }
 .bg-white { background-color: #fff; }
 .bg-green { background-color: #04ff006e; }
-.bg-yelow { background-color: #fae65ac4; }
+.bg-yellow { background-color: #fae65ac4; }
 .bg-brown { background-color: #ffa446c4; }
 .bg-red { background-color: #fa5a5a; }
 .bg-prymari { background-color: #1e87f0; }
@@ -131,14 +131,6 @@ html {
     vertical-align: middle;
 }
 
-.uk-navbar {
-    height: 55px;
-}
-
-.uk-navbar-left, .uk-navbar-right, .uk-navbar-center:only-child {
-    flex-wrap: nowrap;
-}
-
 .text-color-white { color: #fff; }
 
 .vh-25 { height: 25vh; }
@@ -162,7 +154,7 @@ html {
         bottom: 15px;
     }
 }
-  
+
 @media (min-width: 960px)  and (max-width: 1200px) { /* Medium screen width in UI Kit */
     .ml-40:nth-of-type(3n+2), .ml-r-40:nth-of-type(3n+3) { /* Select the 2nd, 3rd element of the row when showing 3 columns */
       margin-left: 40px;
@@ -173,7 +165,7 @@ html {
         bottom: 50px;
     }
 }
-  
+
 @media (min-width: 640px)  and (max-width: 960px) { /* Small screen width in UI Kit */
     .ml-40:nth-of-type(2n+2) { /* Select the 2nd element of the row when showing 2 columns */
       margin-left: 0px;

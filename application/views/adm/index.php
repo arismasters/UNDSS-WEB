@@ -16,6 +16,12 @@
     <script src="<?=base_url();?>assets/plugins/jquery/jquery.min.js"></script>
     <script src="<?=base_url();?>assets/plugins/tinymce/jquery.tinymce.min.js"></script>
     <script src="<?=base_url();?>assets/plugins/tinymce/tinymce.min.js"></script>
+
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Theme -->
+    <link href="<?=base_url();?>assets/css/main.css" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
@@ -25,9 +31,9 @@
     <?=(is_null($this->template->with_side_menu)) ? '':$_side_menu;?>
     <!-- end side menu -->
     <!-- <div class="uk-container-expand" uk-height-viewport="offset-bottom: 50"> -->
-    <div class="uk-container-expand">
+    <div class="container collapsed">
         <?=$_content;?>
-    </div>    
+    </div>
     <!-- uikit Js -->
     <script src="<?=base_url();?>assets/js/uikit.js"></script>
     <script src="<?=base_url();?>assets/js/uikit-icons.js"></script>

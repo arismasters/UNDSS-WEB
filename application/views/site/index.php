@@ -19,14 +19,17 @@
     <!-- Jquery Core Js -->
     <script src="<?=base_url();?>assets/plugins/jquery/jquery.min.js"></script>
     <script src="<?=base_url();?>assets/js/custom.js"></script>
+
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
     <?=$_header;?>
     <!-- end header -->
-    
+
     <?=$_content;?>
-    
+
     <?=$_footer;?>
 
     <!-- uikit Js -->
