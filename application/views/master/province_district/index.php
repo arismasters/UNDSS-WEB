@@ -2,11 +2,14 @@
 
 <div>
     <div class="uk-grid-small uk-grid-match-height uk-viewport-height" uk-grid="true">
-        <div class="list-frame uk-width-4-5@m uk-viewport-height">
+        <div class="list-frame uk-width-1-3@m uk-viewport-height">
             <div class="list-header">
                 <div class="uk-grid-small uk-flex-middle" uk-sticky="offset: 0" uk-grid="true">
-                    <div class="uk-width-expand">
-                        <strong class="text-color-primary">Regulation</strong>
+                    <div class="uk-width-auto">
+                        <a href="<?=base_url()?>master" uk-tooltip="title: Back; pos: left" type="button" class="uk-button uk-button-small uk-border-rounded"><span class="material-icons md-18 uk-text-middle">arrow_back</span></a>
+                    </div>
+                    <div class="uk-width-expand uk-padding-remove">
+                        <strong class="text-color-primary">Province</strong>
                     </div>
                     <div class="uk-width-auto">
                         <div class="uk-button-group rounded">
@@ -26,7 +29,7 @@
                                 <span class="material-icons md-18 uk-text-middle">delete</span>
                             </button>
                             <button type="button" uk-toggle="target: #modal-add" class="uk-button uk-button-small uk-border-rounded uk-button-primary red">
-                                <span class="material-icons uk-text-middle">add</span> Import
+                                <span class="material-icons uk-text-middle">add</span> Add
                             </button>
                         </div>
                     </div>
@@ -58,6 +61,15 @@
                     </div>
                 </li>
             </ul>
+        </div>
+        <div class="detail-frame uk-width-2-3@m uk-viewport-height">
+           <div class="detail-header">
+                <div class="empty-image">
+                    <img src="<?=base_url()?>assets/img/none.svg" class="large" alt="Empty" />
+                    <p class="uk-text-lead">Select an item to view details</p>
+                    <p class="uk-text-meta">None selected</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

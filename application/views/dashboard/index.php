@@ -233,7 +233,7 @@
          <div>
             <div class="uk-grid-small" uk-grid>
                <div class="uk-width-auto">
-                  <div class="bg-map box-color"></div>
+                  <div class="bg-map bg-color-0"></div>
                </div>
                <div class="uk-width-expand">
                   <span class="uk-text-nowrap">0% to 20%</span>
@@ -243,7 +243,7 @@
          <div>
             <div class="uk-grid-small" uk-grid>
                <div class="uk-width-auto">
-                  <div class="bg-brown box-color"></div>
+                  <div class="bg-brown bg-color-1"></div>
                </div>
                <div class="uk-width-expand">
                   <span class="uk-text-nowrap">0% to 20%</span>
@@ -253,7 +253,7 @@
          <div>
             <div class="uk-grid-small" uk-grid>
                <div class="uk-width-auto">
-                  <div class="bg-green box-color"></div>
+                  <div class="bg-green bg-color-2"></div>
                </div>
                <div class="uk-width-expand">
                   <span class="uk-text-nowrap">21% to 40%</span>
@@ -263,7 +263,7 @@
          <div>
             <div class="uk-grid-small" uk-grid>
                <div class="uk-width-auto">
-                  <div class="bg-red box-color"></div>
+                  <div class="bg-red bg-color-3"></div>
                </div>
                <div class="uk-width-expand">
                   <span class="uk-text-nowrap">81% to 100%</span>
@@ -273,7 +273,7 @@
          <div>
             <div class="uk-grid-small" uk-grid>
                <div class="uk-width-auto">
-                  <div class="bg-yellow box-color"></div>
+                  <div class="bg-color-4 box-color"></div>
                </div>
                <div class="uk-width-expand">
                   <span class="uk-text-nowrap">41% to 60%</span>

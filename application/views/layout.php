@@ -19,17 +19,27 @@
 		<link rel="stylesheet" href="<?=base_url()?>assets/css/main.css" />
 	</head>
 	<body>
-		<?php $menu_collapsed = (isset($menu_collapsed) ? $menu_collapsed : false); ?>
-		<?php $this->load->view('navigation', array("menu"=>$menu, "menu_collapsed"=> $menu_collapsed)); ?>
-		<?php $this->load->view('header'); ?>
-		<div class="container <?=($menu_collapsed) ? 'collapsed' : ''?>">
+
+		<?php if (!isset($base)){ ?>
+			<?php $menu_collapsed = (isset($menu_collapsed) ? $menu_collapsed : false); ?>
+			<?php $this->load->view('navigation', array("menu"=>$menu, "menu_collapsed"=> $menu_collapsed)); ?>
+			<?php $this->load->view('header'); ?>
+			<div class="container <?=($menu_collapsed) ? 'collapsed' : ''?>">
+				<?php
+					if(isset($page)) {
+						if(isset($items)) $this->load->view($page, $items);
+						else $this->load->view($page);
+					}
+				?>
+			</div>
+		<?php } else { ?>
 			<?php
-				if(isset($page)) {
-					if(isset($data)) $this->load->view($page, $data);
-					else $this->load->view($page);
-				}
-			?>
-		</div>
+					if(isset($page)) {
+						if(isset($items)) $this->load->view($page, $items);
+						else $this->load->view($page);
+					}
+				?>
+		<?php } ?>
 		
 		<!-- UIkit JS -->
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
