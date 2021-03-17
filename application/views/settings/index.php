@@ -19,7 +19,7 @@
                 </a>
             </li>
             <li>
-                <button  type="button" class="uk-button uk-button-link"><strong>Sign Out</strong></button>
+                <a href="<?=base_url()?>login"><strong>Sign Out</strong></a>
             </li>
         </ul>
     </div>

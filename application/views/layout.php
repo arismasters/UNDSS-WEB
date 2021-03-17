@@ -17,6 +17,9 @@
 
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="<?=base_url()?>assets/css/main.css" />
+
+		<!-- JQuery JS -->
+		<script src="<?=base_url()?>assets/js/jquery.min.js"></script>
 	</head>
 	<body>
 
@@ -44,9 +47,6 @@
 		<!-- UIkit JS -->
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js"></script>
-
-		<!-- JQuery JS -->
-		<script src="<?=base_url()?>assets/js/jquery.min.js"></script>
 
 		<!-- Custom JS -->
 		<script src="<?=base_url()?>assets/js/main.js"></script>

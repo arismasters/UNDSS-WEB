@@ -11,4 +11,15 @@ class Dashboard extends CI_Controller {
 		
 		$this->load->view('layout', $data);
 	}
+
+	public function detail($id)
+	{
+		$data['controller'] = $this;
+		$data['menu'] = "dashboard";
+		$data['menu_collapsed'] = true;
+		$data['page'] = "dashboard/detail";
+		$data['id'] = $id;
+		
+		$this->load->view('layout', $data);
+	}
 }

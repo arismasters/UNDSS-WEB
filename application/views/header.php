@@ -4,7 +4,7 @@
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
                 <li>
-                    <div class="logo"><img src="<?=base_url();?>assets/img/undss-logo.png" alt="Logo UNDSS" /></div></li>
+                    <div class="logo"><img src="<?=base_url();?>assets/img/undss.png" alt="Logo UNDSS" /></div></li>
                 <li>
                     <span class="uk-light uk-text-small brand"><b>UNDSS</b><br/>Dashboard</span>
                 </li>

@@ -43,7 +43,7 @@
                             <input class="uk-checkbox uk-border-circle" type="checkbox" name="bulkId" defaultValue={value.id} onChange={this.handleBulkChange} />
                         </div>
                         <div class="uk-width-expand">
-                            <a href="#">
+                            <a href="<?=base_url()?>incident/detail/1">
                                 <div class="uk-grid-small uk-flex-top uk-padding-small uk-padding-remove-vertical " uk-grid="true">
                                     <div class="uk-width-auto">
                                         <span class="initial-name bg-color-7">SI</span>

@@ -4,7 +4,7 @@
    <div class="uk-background-default uk-border-rounded uk-margin-bottom uk-padding-small">
       <div class="uk-grid-small uk-grid-divider" uk-grid>
          <div class="uk-width-expand">
-            <span class="uk-text-middle"><b>Incident</b> / All Provinces</span>
+            <span class="uk-text-middle"><b>Incident</b> / <?=$id?></span>
          </div>
          <div class="uk-width-auto">
             <span class="material-icons md-20 uk-text-middle">list</span>
@@ -28,7 +28,7 @@
    </div>
 </div>
 
-<div class="bg-map uk-flex uk-flex-center uk-flex-middle uk-viewport-height">
+<div class="bg-map hide-all uk-flex uk-flex-center uk-flex-middle uk-viewport-height">
    <svg
       xmlns:mapsvg="http://mapsvg.com"
       xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -285,3 +285,9 @@
    </div>
 </div>
 <!-- end peta -->
+
+<script>
+    $(function(){
+        $('#<?=$id?>').css('display', 'block');
+    });
+</script>

@@ -38,13 +38,66 @@ a, a:hover { text-decoration: none; }
 .bg-color-16 { background-color: #013E7F !important; color: #fff !important; }
 .bg-color-17 { background-color: #9AC039 !important; color: #fff !important; }
 .bg-color-18 { background-color: #F35963 !important; color: #fff !important; }
+.bg-legend-0 { background-color: #FFF8D9; border: 0.5px solid #ccc }
+.bg-legend-1 { background-color: #FFE05F; border: 0.5px solid #ccc }
+.bg-legend-2 { background-color: #EEB400; border: 0.5px solid #ccc }
+.bg-legend-3 { background-color: #E77500; border: 0.5px solid #ccc }
+.bg-legend-4 { background-color: #C70000; border: 0.5px solid #ccc }
+
 
 /* .bg-color-z.edit { padding: 0 !important; } */
 .bg-color-z-x.input, .table-x-input.input { width: fit-content; block-size: fit-content; padding: 0 5px; }
-.bg-map { overflow: auto; background-color: #0f6ecd5c; }
+.bg-map { 
+  /* background-color: #0f6ecd5c;  */
+  background:
+        linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
+        linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+        linear-gradient(transparent 3px, #A5C7EF 3px, #A5C7EF 78px, transparent 78px),
+        linear-gradient(-90deg, #aaa 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 3px, #A5C7EF 3px, #A5C7EF 78px, transparent 78px),
+        linear-gradient(#aaa 1px, transparent 1px),
+        #A5C7EF;
+    background-size:
+        4px 4px,
+        4px 4px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px;
+  display: block; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  border-left: 45px solid transparent;
+  padding-top: 150px;
+}
+
+.bg-map.collapsed { 
+  border-left: 240px solid transparent;
+}
+
 .bg-map-legend-frame { padding: 20px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-.bg-map > .menu-frame { z-index: 1; }
-.bg-map > svg { transform: scale(2.5); z-index: 0; }
+.menu-frame { z-index: 1; }
+.bg-map > svg { transform: scale(2); z-index: 0; transform-origin: 0 0; display: block; }
+.box-color {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.bg-map path:hover { fill: #03506f; } 
+.bg-map.hide-all path {
+  display: none
+}
 
 .brand { line-height: 19px !important; }
 
@@ -88,6 +141,7 @@ a, a:hover { text-decoration: none; }
   color: #fff;
 }
 
+
 /* C */
 /* ------------------------------------------------------------------------------------ */
 /* container ==================================== */
@@ -98,7 +152,7 @@ a, a:hover { text-decoration: none; }
   border-left: 240px solid transparent;
   width: 100%;
   height: calc(100% - 35px);
-  overflow-y: auto;
+  overflow: auto;
   z-index: 0;
 }
 
@@ -262,16 +316,20 @@ a, a:hover { text-decoration: none; }
 /* login ==================================== */
 .login-frame  {
   /* background-image: url("clove-bg.png"); */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom right;
+  background-position: bottom right; */
+  background: -webkit-linear-gradient(110deg, #111 40%, rgba(0, 0, 0, 0) 30%), -webkit-radial-gradient(farthest-corner at 0% 0%, #2a2a2b 90%, #747474 70%);
+  background: -o-linear-gradient(110deg, #111 40%, rgba(0, 0, 0, 0) 30%), -o-radial-gradient(farthest-corner at 0% 0%, #2a2a2b 90%, #747474 70%);
+  background: -moz-linear-gradient(110deg, #111 40%, rgba(0, 0, 0, 0) 30%), -moz-radial-gradient(farthest-corner at 0% 0%, #2a2a2b 90%, #747474 70%);
+  background: linear-gradient(110deg, #111 40%, rgba(0, 0, 0, 0) 30%), radial-gradient(farthest-corner at 0% 0%, #2a2a2b 90%, #747474 70%);
   width: 100%;
   min-height: 100vh;
   position: relative;
 }
 
 .login-frame .login-logo {
-  width: 180px
+  width: 100px
 }
 
 .login-frame .uk-container {
@@ -307,7 +365,7 @@ a, a:hover { text-decoration: none; }
 }
 
 .login-frame .login-header img {
-  width: 100px;
+  width: 250px;
 }
 
 .login-frame .login-form {
@@ -341,7 +399,7 @@ a, a:hover { text-decoration: none; }
 }
 
 .logo > img {
-  width: 20px;
+  width: 35px;
 }
 
 /* M */

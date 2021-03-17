@@ -24,6 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://undss.local/';
+$config['apps_name']    = 'UNDSS Dashboard';
+$config['apps_favicon'] = 'assets/img/favicon.png';
 
 /*
 |--------------------------------------------------------------------------
